@@ -10,7 +10,7 @@ for(let i = 0 ; i < arr.length; i++) {
     withoutArticles.push(str);
 }
 
-withoutArticles.sort();
+// withoutArticles.sort();
 for(let i = 0; i < withoutArticles.length; i++) {
     console.log(map[ withoutArticles[i] ]);
 }
