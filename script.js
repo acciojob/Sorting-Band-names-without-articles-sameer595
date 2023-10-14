@@ -9,3 +9,8 @@ for(let i = 0 ; i < arr.length; i++) {
     map[str] = arr[i];
     withoutArticles.push(str);
 }
+
+withoutArticles.sort();
+for(let i = 0; i < withoutArticles.length; i++) {
+    console.log(map[ withoutArticles[i] ]);
+}
