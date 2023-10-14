@@ -1,11 +1,11 @@
-//your code here
-const sampleObject = { red: "#FF0000", green: "#00FF00", white: "#FFFFFF" };
-
-function hasKey(key) {
-  // Check if the key exists in the sampleObject
-  return sampleObject.hasOwnProperty(key);
+let arr = ['The Virupaksha Temple', 'A Victoria Memorial', 'An Tajmahal'];
+let withoutArticles =  [] ;
+let map = {} ;
+for(let i = 0 ; i < arr.length; i++) {
+    let str = arr[i];
+    str = str.replace(/\ban\b|\bthe\b|\ba\b/gi, "")
+    str = str.replace(/ +/gi, " ");
+    str = str.trim();
+    map[str] = arr[i];
+    withoutArticles.push(str);
 }
-
-// Do not change the code below
-const key = prompt("Enter Key.");
-alert(hasKey(key));
